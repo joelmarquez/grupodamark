@@ -619,7 +619,7 @@ textarea.form-control {
 }
 
 .bg-black-transparent { 
-  background: linear-gradient(60deg, red, black);
+  background: linear-gradient(60deg, #6c757d, black);
   /* background-color: rgba(17, 19, 20, 0.25);  */
   width: 60%;
   border-radius: 20px;
