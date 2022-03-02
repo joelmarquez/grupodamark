@@ -254,7 +254,7 @@
                         <a href="https://www.avanservices.com" target="_blank">  <img src="img/logo-avanservices.jpg"> </a>
                     </div>
                         <h3><b>Renta de Equipos</b></h3>
-                    <p> Somos una empresa OUTSORCING, con amplia experiencia en el área de servicio de copiadoras, 
+                    <p> Somos una empresa OUTSOURCING, con amplia experiencia en el área de servicio de copiadoras, 
                         impresoras y multifuncionales; contamos con una estructura de servicio especialmente diseñada 
                         para alcanzar altos estándares de calidad y un excelente grupo humano el cual se capacita en 
                         forma permanente a fin de estar actualizados en los cambios e innovaciones tecnológicas que 
