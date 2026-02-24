@@ -13,7 +13,7 @@ if ($_POST['empresa'] == "grupodamark") {
     
     if ($_POST['submit']) {
     if (mail ($para, $titulo, $msjCorreo)) {
-    header("Location: index.php?Ok");
+    header("Location: index.php?Ok#contact-form-anchor");
     } else {
     echo 'Falló el envio';
         }
