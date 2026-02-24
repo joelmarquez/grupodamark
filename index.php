@@ -53,357 +53,207 @@
         <main id="content-box" class="order-first">
             <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="img/section-1-grupodamark.jpg" id="section-1">
                 <div class="container">
-                    <div class="item">
-                        <!-- <div class="bg-blue-transparent simple"><p>Your simplest HTML template, the most amazing page ever, yet free!</p></div> -->
-                        <!-- Respuesta de formulario enviado con exito -->
-                        <?php 
-                            if(isset($_GET['Ok'])){
-                                echo "<div class='alert alert-success' role='alert'>" . 'Formulario enviado con exito.' . "</div>" ;
-                            }
-                            // var_dump($_GET);  
-                        ?>
-
-                        <div class="simple"><p><img src="img/logo-Damark-rect.png"></p></div>
-                        <div id="accordion" class="myaccordion">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            Representante Oficial Canon
-                                            <span class="fa-stack fa-sm">
-                                            <i class="fas fa-circle fa-stack-2x"></i>
-                                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-                                            </span>
-                                        </button>
-                                    </h2>
-                                </div>
-                                <!-- Acordeon -->
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p><b>Grupo Damark</b>, se proyecta como una compañía especialista en la distribución de productos CANON, a través de canales y/o distribuidores, con presencia comercial durante más de 20 años en Venezuela. </p>
-                                        <p>En Canon, creemos en la filosofía Kyosei: “Todas las personas, sin distinción de raza, religión o cultura, viviendo y trabajando juntas en armonía en pro del futuro”. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Productos y Servicios
-                                        <span class="fa-stack fa-2x">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </button>
-                                    </h2>
-                                </div>
-
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                    <div class="card-body">
-
-                                        <div class="row">
-                                            <div class="col-md-4"><p><i class="fas fa-print"> Fotocopiadoras</i></p>
-                                                <p>
-                                                    <i class="fas fa-angle-right"> Nuevas</i><br>
-                                                    <i class="fas fa-angle-right"> Remarketing</i><br>
-                                                    <i class="fas fa-angle-right"> Multifuncionales e Impresoras </i><br>
-                                                </p>
-                                            </div>
-
-                                            <div class="col-md-4"><p><i class="fas fa-power-off"> Soluciones Digitales</i></p>
-                                                <p>
-                                                    <i class="fas fa-angle-right"> Equipos de Alto Volumen</i><br>
-                                                    <i class="fas fa-angle-right"> Equipos Formato  Ancho </i><br>
-                                                    <i class="fas fa-angle-right"> Multifuncionales e Impresoras </i><br>
-                                                </p>
-                                            </div>
-
-                                            <div class="col-md-4"><p><i class="fas fa-box"> Consumibles</i></p>
-                                                <p>
-                                                    <i class="fas fa-angle-right"> Originales </i><br>
-                                                    <i class="fas fa-angle-right"> Compatibles </i><br>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div class="row">
-                                            <div class="col-md-6"><p><i class="fas fa-plug"> Repuestos</i></p>
-                                                <p>
-                                                    <i class="fas fa-angle-right"> Originales</i><br>
-                                                    <i class="fas fa-angle-right"> Compatibles </i><br>
-                                                    <i class="fas fa-angle-right"> Productos para Recarga </i><br>
-                                                </p>
-                                            </div>
-
-                                            <div class="col-md-6"><p><i class="fas fa-house-user"> Servicios</i></p>
-                                                <p>
-                                                    <i class="fas fa-angle-right"> Centro de Diagnóstico de Garantia</i><br>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <p><hr></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Contactos
-                                        <span class="fa-stack fa-2x">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </button>
-                                    </h2>
-                                </div>
-
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-8 contact-form bg-black-transparent">
-                                                <div class="form tm-contact-item-inner ">
-                                                    <p class="font-body-acccordeon">Comunicate con nosotros</p>
-                                                    <form action="send.php" method="POST">
-                                                        <div class="form-group">
-                                                            <input name="nombre" type="text" class="form-control ont-body-acccordeon" placeholder="Nombre" required>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input name="email" type="text" class="form-control" placeholder="Email" required>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <textarea name="mensaje" class="textarea form-control" placeholder="Mensaje" required></textarea>
-                                                        </div>
-                                                        <div class="form-group text-right">
-                                                            <input type="submit" name="submit" class="btn btn-default" value="Enviar Formulario">
-                                                            <!-- <input id="submit-send" name="submit" type="submit" value="Enviar Formulario"> -->
-                                                            <input type="hidden"  name="empresa" value= "grupodamark">
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <p><b>Dirección: <br></b> 4TA. Transv de Monte Cristo. <br> Edif. No. 11, Piso 1. <br> Urbanización Monte Cristo. <br> Caracas - Venezuela </p>
-                                                <p><b>Teléfonos: </b> (+58 212) 2381141</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="item w-100">
+                        <div class="simple mb-5 mt-4"><p><img src="img/logo-Damark-rect.png" alt="Grupo Damark" class="img-fluid" style="max-height: 120px;"></p></div>
+                        <div class="bg-black-transparent mx-auto p-4 mb-5" style="max-width: 800px; width: 90%;">
+                            <h2 class="text-white mb-3 text-center">Representante Oficial Canon</h2>
+                            <p class="text-white font-weight-light text-center"><b>Grupo Damark</b> se proyecta como una compañía especialista en la distribución de productos CANON, a través de canales y/o distribuidores, con presencia comercial durante más de 20 años en Venezuela.</p>
+                            <p class="text-white font-weight-light mb-0 text-center">En Canon, creemos en la filosofía Kyosei: “Todas las personas, sin distinción de raza, religión o cultura, viviendo y trabajando juntas en armonía en pro del futuro”.</p>
                         </div>
-                        <!-- end Acordeon -->
                     </div>
                 </div>
             </div>
 
             <!-- AVANCORP DAMARK -->
-            <section class="work-section section" id="section-2">
+            <section class="avancorpdamark-section work-section section text-white" id="section-2" style="background-color: #2E2C2C; padding-top: 100px; padding-bottom: 100px;">
                 <div class="container">
-                    <div class="row">
-                        <div class="item col-md-4">
-                            <div class="tm-work-item-inner">
-                                <a href="https://davidlandaeta4.wixsite.com/website" target="_blank">  <img src="img/logo-Avancorp.jpg"> </a><br><br>
-                                <h3>Remote Support Unit </h3>
-                                <p>En la "Unidad de Soporte Remoto" de Grupo Damark, creemos que el conocimiento adecuado y la ventaja tecnológica pueden llevar a las empresas hacia un futuro exitoso.</p>
-                            </div>                        
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-5">
+                            <h2 class="mb-4 font-weight-bold" style="font-size: 2.5rem;">AVANCORP - DAMARK</h2>
+                            <h4 class="mb-4" style="color: #CAEBF2; font-size: 1.5rem;">Mayoristas en productos de impresión y copiado</h4>
+                            <p class="font-weight-light mb-4" style="font-size: 1.15rem; line-height: 1.8;">Somos distribuidores oficiales de productos Canon para latinoamerica. <br>Equipos Nuevos y Equipos Remarketing. Productos Originales.</p>
+                            <p class="font-weight-light mb-4" style="font-size: 1.15rem; line-height: 1.8;">En la "Unidad de Soporte Remoto" de Grupo Damark, creemos que el conocimiento adecuado y la ventaja tecnológica pueden llevar a las empresas hacia un futuro exitoso.</p>
+                            <a href="https://davidlandaeta4.wixsite.com/website" target="_blank" class="btn btn-outline-light mt-4 px-5 py-3 font-weight-bold text-uppercase" style="border-radius: 30px; border-width: 2px;">Visitar Sitio Web <i class="fas fa-arrow-right ml-2"></i></a>
                         </div>
-                        <div class="item col-md-4 one">
-                            <div class="tm-work-item-inner">
-                                <a href="https://www.cla.canon.com/cla/en/home" target="_blank">  <img src="img/logo-damark-square.jpg"> </a><br><br>
-                                <h3>Mayoristas en productos de impresión y copiado</h3>
-                                <p>Somos distriubuidores oficiales de productos Canon para latinoamerica. </p>
-                                <p>Equipos Nuevos y Equipos Remarketing</p>
-                                <p>Productos Originales</p>
+                        <div class="col-lg-5 offset-lg-1 text-center">
+                            <div class="bg-white p-4 mb-4" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                                <img src="img/logo-Avancorp.jpg" class="img-fluid mb-4" style="max-height: 80px;" alt="Avancorp">
+                                <br>
+                                <img src="img/logo-damark-square.jpg" class="img-fluid" style="max-height: 80px;" alt="Damark">
+                            </div>
+                            <div class="text-left p-4 mx-auto" style="background: rgba(0,0,0,0.3); border-radius: 15px;">
+                                <h5 class="mb-4 text-white"><img src="img/logocanon.png" style="max-height: 25px;" class="mr-2"> Contacto</h5>
+                                <ul class="list-unstyled font-weight-light text-white m-0" style="line-height: 2;">
+                                    <li class="mb-2"><i class="fas fa-phone-alt text-white mr-3 text-center" style="width: 20px;"></i> +58 212 2381141</li>
+                                    <li class="mb-2"><i class="fas fa-envelope text-white mr-3 text-center" style="width: 20px;"></i> info@grupodamark.com</li>
+                                    <li><i class="fas fa-map-marker-alt text-white mr-3 text-center" style="width: 20px;"></i> Puerto la Cruz / Maturin / Caracas / Valencia</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="item col-md-4 two">
-                            <div class="tm-work-item-inner">
-                                <div class="tm-contact-item-inner-2 contact-details data-serv">
-                                    <img src="img/logocanon.png">
-                                    <ul class="font-weight-light" style="list-style-type: none;">
-                                        <li>
-                                            <span class="no-bullets"><i class="fas fa-mobile-alt"></i></span>
-                                            <span class="lbl">Tel:</span> <a href="#"> +58 2122381141</a>
-                                        </li>
-                                        <li>
-                                            <span class="no-bullets"><i class="fas fa-at"></i></span>
-                                            <span class="lbl">Email:</span> info@grupodamark.com
-                                        </li>
-                                        <li>
-                                            <span class="no-bullets"><i class="fas fa-globe-asia"></i></span>
-                                            <!-- <span class="lbl">URL:</span> <a href="https://www.damark.com.ve" target="_blank"> damark.com.ve</a> -->
-                                            <span class="lbl">Estamos ubicados en:</span> Puerto la Cruz / Maturin / Caracas / Valencia
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="title">
-                        <h2>AVANCORP - DAMARK</h2>
                     </div>
                 </div>
             </section>
 
              <!-- AVANSERVICES -->
-            <section class="gallery-section section parallax-window work-section" data-parallax="scroll" data-image-src="img/section-bg-avanservices.jpg" id="section-3">
-                <div class="container">
-                    <div class="text-center">
-                        <a href="https://www.avanservices.com" target="_blank">  <img src="img/logo-avanservices.jpg"> </a>
-                    </div>
-                        <h3><b>Renta de Equipos</b></h3>
-                    <p> Somos una empresa OUTSOURCING, con amplia experiencia en el área de servicio de copiadoras, 
-                        impresoras y multifuncionales; contamos con una estructura de servicio especialmente diseñada 
-                        para alcanzar altos estándares de calidad y un excelente grupo humano el cual se capacita en 
-                        forma permanente a fin de estar actualizados en los cambios e innovaciones tecnológicas que 
-                        se presentan en nuestro ámbito. 
-                    </p>
-                    <div class="container-fluid">
-                        <div class="row justify-content-end">
-                            <div class="col-md-12">
-                                <div class="tm-contact-item-inner-2 contact-details bkg_avan data-serv">
-                                    <ul class="font-weight-light" style="list-style-type: none;">
-                                        <li>
-                                            <span class="no-bullets"><i class="fas fa-mobile-alt"></i></span>
-                                            <span class="lbl">Tel:</span> <a href="#"> +58-212-2379755/8954</a>
-                                        </li>
-                                        <li>
-                                            <span class="no-bullets"><i class="fas fa-at"></i></span>
-                                            <span class="lbl">Email:</span> <a href="#"> ventas@avanservices.com</a>
-                                        </li>
-                                        <li>
-                                            <span class="no-bullets"><i class="fas fa-globe-asia"></i></span>
-                                            <span class="lbl">URL:</span> <a href="https://www.avanservices.com" target="_blank"> avanservices.com</a>
-                                        </li>
-                                    </ul>
-                                </div>
+            <section class="gallery-section section parallax-window text-white position-relative" data-parallax="scroll" id="section-3" style="padding-top: 100px; padding-bottom: 100px;">
+                <div class="avanservices-section position-absolute w-100 h-100"></div>
+                <div class="container position-relative" style="z-index: 2;">
+                    <div class="row align-items-center flex-row-reverse">
+                        <div class="col-lg-6 mb-5 pl-lg-5">
+                            <h2 class="mb-4 font-weight-bold" style="font-size: 2.5rem;">AVANSERVICES</h2>
+                            <h4 class="mb-4" style="color: #CAEBF2; font-size: 1.5rem;">Renta de Equipos</h4>
+                            <p class="font-weight-light mb-4" style="font-size: 1.15rem; line-height: 1.8;">Somos una empresa OUTSOURCING, con amplia experiencia en el área de servicio de copiadoras, impresoras y multifuncionales; contamos con una estructura de servicio especialmente diseñada para alcanzar altos estándares de calidad y un excelente grupo humano el cual se capacita en forma permanente a fin de estar actualizados en los cambios e innovaciones tecnológicas que se presentan en nuestro ámbito.</p>
+                            <a href="https://www.avanservices.com" target="_blank" class="btn btn-primary mt-4 px-5 py-3 font-weight-bold text-uppercase" style="border-radius: 30px; box-shadow: 0 5px 15px rgba(53, 107, 162, 0.4);">Visitar avanservices.com <i class="fas fa-external-link-alt ml-2"></i></a>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <div class="p-4 mb-4 d-inline-block" style="background: rgba(255,255,255,0.9); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                                <img src="img/logo-avanservices.jpg" class="img-fluid" style="max-height: 120px;" alt="Avanservices">
+                            </div>
+                            <div class="text-left p-4 mx-auto" style="background: rgba(0,0,0,0.6); border-radius: 15px; max-width: 400px; border-left: 4px solid #356ba2;">
+                                <h5 class="mb-4 text-white">Información de Contacto</h5>
+                                <ul class="list-unstyled font-weight-light text-white m-0" style="line-height: 2;">
+                                    <li class="mb-2"><i class="fas fa-phone-alt text-white mr-3 text-center" style="width: 20px;"></i> +58 212 2379755 / 8954</li>
+                                    <li class="mb-2"><i class="fas fa-envelope text-white mr-3 text-center" style="width: 20px;"></i> ventas@avanservices.com</li>
+                                    <li><i class="fas fa-globe text-white mr-3 text-center" style="width: 20px;"></i> avanservices.com</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="title">
-                        <h2>AVANSERVICES</h2>
-                    </div> 
                 </div>
             </section>
 
              <!-- PROIMCOTECH TODOCANON -->
-            <section class="contact-section section " id="section-4">
+            <section class="proimcotech-section section text-white" data-parallax="scroll" id="section-4" style="padding-top: 100px; padding-bottom: 100px;">
                 <div class="container">
-                    <div class="title">
-                        <a href="https://www.todocanon.com" target="_blank">  <img src="img/Logo-ProincoTech.jpg"> </a>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 mb-6 contact-form">
-                            <p><img src="img/logotodocanon.png"></p>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-5">
+                            <h2 class="mb-4 font-weight-bold" style="font-size: 2.5rem;">PROIMCOTECH</h2>
+                            <h4 class="mb-4" style="color: #CAEBF2; font-size: 1.5rem;">Distribuidores Autorizados</h4>
+                            <p class="font-weight-light mb-4" style="font-size: 1.15rem; line-height: 1.8;">Somos una empresa venezolana, con mas de 15 años de experiencia en la venta y distribuciòn de productos y accesorios fotográficos de la prestigiosa marca CANON.</p>
+                            <a href="https://www.todocanon.com" target="_blank" class="btn btn-outline-light mt-4 px-5 py-3 font-weight-bold text-uppercase" style="border-radius: 30px; border-width: 2px;">Visitar todocanon.com <i class="fas fa-shopping-cart ml-2"></i></a>
                         </div>
-                        <div class="col-lg-6 col-md-6 mb-6 contact-details ">
-                            <div class="tm-contact-item-inner-2">
-                                <p>Somos una empresa venezolana, con mas de 15 años de experiencia en la venta y distribuciòn de 
-                                    productos y accesorios fotográficos de la prestigiosa marca CANON.
-                                </p>
-                                <ul class="font-weight-light">
-                                    <li>
-                                        <span class="icn"><i class="fas fa-mobile-alt"></i></span>
-                                        <span class="lbl">Tel:</span> <a href="#">+58 212 2393373</a>
-                                    </li>
-                                    <li>
-                                        <span class="icn"><i class="fas fa-at"></i></span>
-                                        <span class="lbl">Email:</span> <a href="#">ventas@todocanon.com</a>
-                                    </li>
-                                    <li>
-                                        <span class="icn"><i class="fas fa-globe-asia"></i></span>
-                                        <span class="lbl">URL:</span> <a href="https://www.todocanon.com" target="_blank">todocanon.com</a>
-                                    </li>
+                        <div class="col-lg-5 offset-lg-1 text-center">
+                            <div class="bg-white p-4 mb-4 d-inline-block" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: 100%; max-width: 350px;">
+                                <img src="img/Logo-ProincoTech.jpg" class="img-fluid mb-4" style="max-height: 70px; display: block; margin: 0 auto;" alt="ProincoTech">
+                                <img src="img/logotodocanon.png" class="img-fluid" style="max-height: 60px; display: block; margin: 0 auto;" alt="TodoCanon">
+                            </div>
+                            <div class="text-left p-4 mx-auto" style="background: rgba(255,255,255,0.05); border-radius: 15px; max-width: 350px;">
+                                <h5 class="mb-4 text-white">Información de Contacto</h5>
+                                <ul class="list-unstyled font-weight-light text-white m-0" style="line-height: 2;">
+                                    <li class="mb-2"><i class="fas fa-phone-alt text-white mr-3 text-center" style="width: 20px;"></i> +58 212 2393373</li>
+                                    <li class="mb-2"><i class="fas fa-envelope text-white mr-3 text-center" style="width: 20px;"></i> ventas@todocanon.com</li>
+                                    <li><i class="fas fa-globe text-white mr-3 text-center" style="width: 20px;"></i> todocanon.com</li>
                                 </ul>
-                            </div>                        
-                        </div>
-                    </div> 
-                        <div class="title">
-                            <h2>PROIMCOTECH</h2>
-                            <hr>
-                        </div>
-                    </div>
-            </section>
-
-             <!-- DATA SERVICE -->
-             <section class="gallery-section section parallax-window work-section" data-parallax="scroll" data-image-src="img/section-bg-dataservices.jpg" id="section-5">
-                <div class="container">
-                    <div class="text-center">
-                        <a href="https://www.grupodataservicesve.com" target="_blank">  <img src="img/logo-dataservices-square.jpg"> </a>
-                    </div> <br>
-                        <h3><b>SERVICIOS DE IMPRESIÓN Y SOLUCIONES DE COPIADO</b></h3>
-                    <p class="data-serv"> Somos una empresa OUTSORCING, con amplia experiencia en el área de servicio de copiadoras, 
-                        impresoras y multifuncionales; contamos con una estructura de servicio especialmente diseñada 
-                        para alcanzar altos estándares de calidad y un excelente grupo humano el cual se capacita en 
-                        forma permanente a fin de estar actualizados en los cambios e innovaciones tecnológicas que 
-                        se presentan en nuestro ámbito. 
-                    </p>
-                        <div class="row justify-content-end data-serv">
-                            <div class="col-md-6">
-                                <div class="tm-contact-item-inner-2 contact-details">
-                                    <ul class="font-weight-light" style="list-style-type: none; width: max-content;">
-                                        <li>
-                                            <span class="no-bullets"><i class="fas fa-mobile-alt"></i></span>
-                                            <span class="lbl">Tel:</span> <a href="#"> +58 4248241185</a>
-                                        </li>
-                                        <li>
-                                            <span class="no-bullets"><i class="fas fa-at"></i></span>
-                                            <span class="lbl">Email:</span> <a href="#"> info@grupodataservicesve.com</a>
-                                        </li>
-                                        <li>
-                                            <span class="no-bullets"><i class="fas fa-globe-asia"></i></span>
-                                            <span class="lbl">URL:</span> <a href="https://www.grupodataservicesve.com/" target="_blank"> grupodataservicesve.com</a>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
-                    <div class="title">
-                        <h2>DATASERVICE</h2>
-                    </div> 
+                    </div>
                 </div>
             </section>
 
+             <!-- DATA SERVICE -->
+             <section class="gallery-section section parallax-window text-white position-relative" data-parallax="scroll" id="section-5" style="padding-top: 100px; padding-bottom: 100px;">
+                <div class="dataservice-section position-absolute w-100 h-100" style="top:0; left:0; z-index: 1;"></div>
+                <div class="container position-relative" style="z-index: 2;">
+                    <div class="row align-items-center flex-row-reverse">
+                        <div class="col-lg-6 mb-5 pl-lg-5">
+                            <h2 class="mb-4 font-weight-bold" style="font-size: 2.5rem;">DATASERVICE</h2>
+                            <h4 class="mb-4" style="color: #CAEBF2; font-size: 1.5rem;">Servicios de Impresión y Soluciones de Copiado</h4>
+                            <p class="font-weight-light mb-4" style="font-size: 1.15rem; line-height: 1.8;">Somos una empresa OUTSOURCING, con amplia experiencia en el área de servicio de copiadoras, impresoras y multifuncionales; contamos con una estructura de servicio especialmente diseñada para alcanzar altos estándares de calidad y un excelente grupo humano el cual se capacita en forma permanente a fin de estar actualizados en los cambios e innovaciones tecnológicas que se presentan en nuestro ámbito.</p>
+                            <a href="https://www.grupodataservicesve.com" target="_blank" class="btn btn-primary mt-4 px-5 py-3 font-weight-bold text-uppercase" style="border-radius: 30px; box-shadow: 0 5px 15px rgba(53, 107, 162, 0.4);">Visitar grupodataservicesve.com <i class="fas fa-external-link-alt ml-2"></i></a>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <div class="p-4 mb-4 d-inline-block" style="background: rgba(255,255,255,0.9); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                                <img src="img/logo-dataservices-square.jpg" class="img-fluid" style="max-height: 120px;" alt="Data Services">
+                            </div>
+                            <div class="text-left p-4 mx-auto" style="background: rgba(0,0,0,0.6); border-radius: 15px; max-width: 400px; border-left: 4px solid #356ba2;">
+                                <h5 class="mb-4 text-white">Información de Contacto</h5>
+                                <ul class="list-unstyled font-weight-light text-white m-0" style="line-height: 2;">
+                                    <li class="mb-2"><i class="fas fa-phone-alt text-white mr-3 text-center" style="width: 20px;"></i> +58 424 8241185</li>
+                                    <li class="mb-2"><i class="fas fa-envelope text-white mr-3 text-center" style="width: 20px;"></i> info@grupodataservicesve.com</li>
+                                    <li><i class="fas fa-globe text-white mr-3 text-center" style="width: 20px;"></i> grupodataservicesve.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
              <!-- VISUAL MEDICA-->
-             <section class="contact-section contact-section-vm section" id="section-6">
+             <section class="visualmedica-section section text-white" data-parallax="scroll" id="section-6" style="padding-top: 100px; padding-bottom: 100px;">
                 <div class="container">
-                    <div class="title">
-                        <a href="https://www.visualmedica.com/" target="_blank">  <img src="img/logo-visualmedica.jpg"> </a>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 mb-6 contact-form">
-                            <h3><b>MANEJO DE IMAGENES RADIOLOGICAS</b></h3>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-5">
+                            <h2 class="mb-4 font-weight-bold" style="font-size: 2.5rem;">VISUAL MÉDICA</h2>
+                            <h4 class="mb-4" style="color: #CAEBF2; font-size: 1.5rem;">Manejo de Imágenes Radiológicas</h4>
+                            <p class="font-weight-light mb-4" style="font-size: 1.15rem; line-height: 1.8;">Visual Medica es una empresa líder a nivel Latinoamericano en el desarrollo de sistemas y software para el diagnóstico por imágenes en el área médica. Hemos acompañado el progreso de centenares de instituciones médicas durante más de una década y media.</p>
+                            <a href="https://www.visualmedica.com/" target="_blank" class="btn btn-outline-light mt-4 px-5 py-3 font-weight-bold text-uppercase" style="border-radius: 30px; border-width: 2px;">Visitar visualmedica.com <i class="fas fa-external-link-alt ml-2"></i></a>
                         </div>
-                        <div class="col-lg-6 col-md-6 mb-6 contact-details">
+                        <div class="col-lg-5 offset-lg-1 text-center">
+                            <div class="bg-white p-4 mb-4 d-inline-block" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                                <img src="img/logo-visualmedica.jpg" class="img-fluid" style="max-height: 90px;" alt="Visual Medica">
+                            </div>
+                            <div class="text-left p-4 mx-auto" style="background: rgba(0,0,0,0.3); border-radius: 15px; max-width: 350px;">
+                                <h5 class="mb-4 text-white">Información de Contacto</h5>
+                                <ul class="list-unstyled font-weight-light text-white m-0" style="line-height: 2;">
+                                    <li class="mb-2"><i class="fas fa-phone-alt text-white mr-3 text-center" style="width: 20px;"></i> + 1 754 301 4022</li>
+                                    <li class="mb-2"><i class="fas fa-envelope text-white mr-3 text-center" style="width: 20px;"></i> info@visualmedica.com</li>
+                                    <li><i class="fas fa-globe text-white mr-3 text-center" style="width: 20px;"></i> visualmedica.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </section>
+
+            <!-- CONTACTO -->
+            <section class="contact-section section pb-5" id="section-contact" style="background-color: #2E2C2C; padding-top: 100px;">
+                <div class="container" id="contact-form-anchor">
+                    <div class="title mb-5 text-center">
+                        <h2 class="text-white font-weight-bold">CONTACTO GRUPO DAMARK</h2>
+                        <hr style="border-top: 2px solid #CAEBF2; width: 100px; margin: 20px auto;">
+                    </div>
+                    <?php 
+                        if(isset($_GET['Ok'])){
+                            echo "<div class='alert alert-success text-center mb-5' role='alert' style='font-size: 1.2rem;'>¡Formulario enviado con éxito! Nos pondremos en contacto a la brevedad.</div>" ;
+                        }
+                    ?>
+                    <div class="row align-items-center">
+                        <div class="col-md-7 mb-4">
+                            <div class="p-5" style="background: rgba(0,0,0,0.5); border-radius: 15px; border-top: 4px solid #c02b2bff;">
+                                <h4 class="text-white mb-4"><i class="fas fa-envelope mr-3 text-white"></i> Escríbenos</h4>
+                                <form action="send.php" method="POST">
+                                    <div class="form-group mb-4">
+                                        <input name="nombre" type="text" class="form-control" placeholder="Tu Nombre Completo" required style="border-bottom: 2px solid #6c757d;">
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <input name="email" type="email" class="form-control" placeholder="Tu Correo Electrónico" required style="border-bottom: 2px solid #6c757d;">
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <textarea name="mensaje" class="form-control border-0" placeholder="¿En qué te podemos ayudar?" rows="5" required style="background: rgba(255,255,255,0.05); border-radius: 8px;"></textarea>
+                                    </div>
+                                    <div class="form-group text-right mt-4">
+                                        <button type="submit" name="submit" value="1" class="btn btn-primary px-5 py-3 text-uppercase font-weight-bold" style="border-radius: 30px;"><i class="fas fa-paper-plane mr-2"></i> Enviar Mensaje</button>
+                                        <input type="hidden" name="empresa" value="grupodamark">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-5 mb-4 pl-md-5">
                             <div class="tm-contact-item-inner-2">
-                                <p>Visual Medica es una empresa líder a nivel Latinoamericano en el desarrollo de sistemas y software  
-                                para el diagnóstico por imágenes en el área médica. Hemos acompañado el progreso de centenares de instituciones 
-                                médicas durante más de una década y media.
-                                </p>
-                                <ul class="font-weight-light">
-                                    <li>
-                                        <span class="icn"><i class="fas fa-mobile-alt"></i></span>
-                                        <span class="lbl">Tel: </span> <a href="#"> + 1 754 301 4022</a>
+                                <h4 class="text-white mb-4 font-weight-bold">Información de Contacto</h4>
+                                <ul class="font-weight-light text-white list-unstyled" style="font-size: 1.15rem; line-height: 2;">
+                                    <li class="mb-4 d-flex">
+                                        <div><i class="fas fa-map-marker-alt fa-2x mr-4 text-white"></i></div>
+                                        <div><strong>Dirección:</strong><br>4TA. Transv de Monte Cristo.<br>Edif. No. 11, Piso 1.<br>Urbanización Monte Cristo.<br>Caracas - Venezuela</div>
                                     </li>
-                                    <li>
-                                        <span class="icn"><i class="fas fa-at"></i></span>
-                                        <span class="lbl">Email: </span> <a href="#"> info@visualmedica.com</a>
-                                    </li>
-                                    <li>
-                                        <span class="icn"><i class="fas fa-globe-asia"></i></span>
-                                        <span class="lbl">URL:</span> <a href="https://www.visualmedica.com/" target="_blank">visualmedica.com</a>
+                                    <li class="d-flex">
+                                        <div><i class="fas fa-phone-alt fa-2x mr-4 text-white"></i></div>
+                                        <div><strong>Teléfonos:</strong><br><a href="tel:+582122381141" class="text-white">(+58 212) 2381141</a></div>
                                     </li>
                                 </ul>
-                            </div>                        
+                            </div>
                         </div>
-                        <div class="title">
-                            <h2>VISUAL MEDICA</h2>
-                            <hr>
-                        </div> 
-                    </div>                
+                    </div>
                 </div>
             </section>
         </main>
