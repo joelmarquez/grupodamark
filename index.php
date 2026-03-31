@@ -159,7 +159,7 @@
                             <h2 class="mb-4 font-weight-bold" style="font-size: 2.5rem;">DATASERVICE</h2>
                             <h4 class="mb-4" style="color: #CAEBF2; font-size: 1.5rem;">Servicios de Impresión y Soluciones de Copiado</h4>
                             <p class="font-weight-light mb-4" style="font-size: 1.15rem; line-height: 1.8;">Somos una empresa OUTSOURCING, con amplia experiencia en el área de servicio de copiadoras, impresoras y multifuncionales; contamos con una estructura de servicio especialmente diseñada para alcanzar altos estándares de calidad y un excelente grupo humano el cual se capacita en forma permanente a fin de estar actualizados en los cambios e innovaciones tecnológicas que se presentan en nuestro ámbito.</p>
-                            <a href="https://www.grupodataservicesve.com" target="_blank" class="btn btn-primary mt-4 px-5 py-3 font-weight-bold text-uppercase" style="border-radius: 30px; box-shadow: 0 5px 15px rgba(53, 107, 162, 0.4);">Visitar grupodataservicesve.com <i class="fas fa-external-link-alt ml-2"></i></a>
+                            <a href="https://www.grupodataservices.com" target="_blank" class="btn btn-primary mt-4 px-5 py-3 font-weight-bold text-uppercase" style="border-radius: 30px; box-shadow: 0 5px 15px rgba(53, 107, 162, 0.4);">Visitar grupodataservicesve.com <i class="fas fa-external-link-alt ml-2"></i></a>
                         </div>
                         <div class="col-lg-6 text-center">
                             <div class="p-4 mb-4 d-inline-block" style="background: rgba(255,255,255,0.9); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
