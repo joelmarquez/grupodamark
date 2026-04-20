@@ -84,6 +84,12 @@ a:focus {
   color: red;
 }
 
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
 /* <<< btn override >>> */
 .btn {
   white-space: normal;
@@ -213,7 +219,7 @@ textarea.form-control {
   width: 26%;
   height: 100%;
   background-color: #FF3B3F;
-  overflow-y: auto;
+  overflow-y: hidden;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,6 +235,7 @@ textarea.form-control {
     top: 0;
     bottom: 0;
     width: 300px;
+    overflow-y: auto;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     display: -webkit-box;
@@ -413,6 +420,35 @@ textarea.form-control {
 @media (max-height: 580px) {
   .navbar .navbar-nav {
     padding-top: 30px;
+  }
+}
+
+/* Compact menu layout for short desktop screens */
+@media (min-width: 992px) and (max-height: 860px) {
+  .navbar .navbar-collapse {
+    padding-left: 24px;
+    padding-right: 16px;
+  }
+
+  .logogd_menu {
+    margin: 16px 20px;
+  }
+
+  .navbar .navbar-nav>.nav-item {
+    min-height: 64px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    font-size: 15px;
+  }
+
+  .navbar .navbar-nav>.nav-item .icn {
+    width: 50px;
+    padding-right: 10px;
+  }
+
+  .navbar .navbar-nav>.nav-item .icn img {
+    max-width: 30px;
+    max-height: 30px;
   }
 }
 
@@ -725,11 +761,35 @@ textarea.form-control {
   background-color: #99ccff;
   padding-top: 121px;
   align-items: flex-start;
+  overflow: hidden;
+}
+
+.banner-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-video-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.banner-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .bg-black-transparent {
   /* background: linear-gradient(60deg, #6c757d, black); */
-  background-color: rgba(17, 19, 20, 0.55);
+  background-color: rgba(17, 19, 20, 0.25);
   width: 60%;
   border-radius: 20px;
   padding: 10px;
@@ -1326,6 +1386,10 @@ figure.effect-julia:hover p {
 }
 
 @media (max-width: 991px) {
+  .header {
+    z-index: 20;
+  }
+
   .section {
     height: auto;
     min-height: 100vh;
@@ -1337,6 +1401,10 @@ figure.effect-julia:hover p {
 
   .banner-section {
     padding-top: 0;
+  }
+
+  .banner-video-wrapper {
+    display: none;
   }
 
   .contact-section {
