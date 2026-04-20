@@ -51,7 +51,13 @@
         </button>
         
         <main id="content-box" class="order-first">
-            <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="img/section-1-grupodamark.jpg" id="section-1">
+            <div class="banner-section section parallax-window" data-parallax="scroll" id="section-1" style="background-image: url('img/section-1-grupodamark.jpg');">
+                <div class="banner-video-wrapper" aria-hidden="true">
+                    <video class="banner-video video" autoplay muted loop playsinline preload="metadata" poster="img/section-1-grupodamark.jpg">
+                        <source src="video/video-background.mp4" type="video/mp4">
+                    </video>
+                    <div class="banner-video-overlay"></div>
+                </div>
                 <div class="container">
                     <div class="item w-100">
                         <div class="simple mb-5 mt-4"><p><img src="img/logo-Damark-rect.png" alt="Grupo Damark" class="img-fluid" style="max-height: 120px;"></p></div>
