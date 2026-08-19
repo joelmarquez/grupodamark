@@ -1482,3 +1482,41 @@ figure.effect-julia:hover p {
     padding: 12px 14px !important;
   }
 }
+
+/* <<< Boton de envio del formulario - version movil >>> */
+@media (max-width: 575px) {
+  #section-contact button[type="submit"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    padding: 13px 18px !important;
+    border-radius: 50px !important;
+    background-image: linear-gradient(135deg, #356ba2 0%, #264f7c 100%);
+    border-color: transparent;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #section-contact button[type="submit"] i {
+    margin-right: 8px !important;
+    font-size: 0.9em;
+  }
+
+  #section-contact button[type="submit"]:active {
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+}
